@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Budget System - Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Start header ------------------------------------------------------------------------------------------- copied from main -->
+<header class="site-header">
+    <div class="logo-area">
+        <h2>IT Budget System</h2>
+        <p>Budget Planning and Resource Management</p>
+    </div>
+
+    <div class="user-info">
+        <!-- Search Bar added -->
+        <form action="search-results.html" method="GET" class="search-form">
+            <input type="text"
+                   name="query"
+                   placeholder="Try 'Switch'..."
+                   required>
+            <button type="submit"
+                    class="search-btn">Search</button>
+        <!-- User Status -->
+        <span>
+                Welcome, Budget Manager
+            </span>
+        <!-- Log out button -->
+        <button class="logout-btn">
+            Log Out
+        </button>
+    </div>
+</header>
+<!-- End the header---------------------------------------------------------------------------------------- -->
+
+<!-- Start Navigation Bar copied from main -->
+<nav class="main-nav">
+    <ul>
+        <!-- Nav to Home Dashboard -->
+        <li><a href="index.html">Dashboard</a></li>
+        <!-- Nav to List view -->
+        <li><a href="list.html">Budget Items</a></li>
+        <!-- Nav to calendar view -->
+        <li><a href="calendar.html">Calendar</a></li>
+        <!-- Nav to add item screen -->
+        <li><a href="add-item.html">Add Item</a></li>
+    </ul>
+</nav>
+<!-- End Navigation Bar ------------------------------------------------------------------- -->
+
+
+<!-- Unqiue Page Contents -->
+<main>
+    <!-- Current Page Header -->
+    <h1 class="page-title">Item Details</h1>
+
+    <section class="detail-form-container">
+        <form class="detail-form">
+            <!-- Item Label -->
+            <label for="item-name">
+                Item Name
+            </label>
+            <!-- Item Input -->
+            <input
+                type="text"
+                id="item-name"
+                value="Switch Upgrade">
+
+            <!-- Category Label -->
+            <label for="category">Category</label>
+            <!-- Category Input -->
+            <select id="category">
+                <option selected>Infrastructure</option>
+                <option>Hardware</option>
+                <option>Licensing</option>
+                <option>Operations</option>
+            </select>
+
+            <!-- Allocated Amount Label -->
+            <label for="allocated-amount">Allocated Amount</label>
+            <!-- Allocated Amount Input -->
+            <input
+                type="number"
+                id="allocated-amount"
+                value="1000">
+
+            <!-- Due Date Label -->
+            <label for="due-date">Due Date</label>
+            <!-- Due Date Input -->
+            <input
+                type="date"
+                id="due-date"
+                value="2026-09-10">
+
+            <!-- Status Label -->
+            <label for="status">Status</label>
+
+            <!-- Status Input -->
+            <select id="status">
+                <option>Pending</option>
+                <option selected>Active</option>
+                <option>Complete</option>
+            </select>
+
+            <!-- Notes Label -->
+            <label for="notes">Notes</label>
+
+            <!-- Input for notes -->
+            <textarea
+                id="notes"
+                rows="5">Awaiting final approval.</textarea>
+
+            <!-- Submit Button -->
+            <button
+                type="submit"
+                class="primary-btn">Update Item</button>
+
+            <a href="list.html" class="cancel-link">Cancel</a>
+        </form>
+    </section>
+</main>
+
+
+
+<!-- Start Footer -------------------------------------------------------------------------------- copied from main -->
+<footer class="site-footer">
+    <p>IT Budget System 1.0</p>
+    <p>&copy; 2026 IT Budget System</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Use</p>
+</footer>
+<!-- End Footer -------------------------------------------------------------------------------- -->
+
+</body>
+</html>

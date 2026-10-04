@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Budget System - Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Start header ------------------------------------------------------------------------------------------- copied from main -->
+<header class="site-header">
+    <div class="logo-area">
+        <h2>IT Budget System</h2>
+        <p>Budget Planning and Resource Management</p>
+    </div>
+
+    <div class="user-info">
+        <!-- Search Bar -->
+        <form action="search-results.html" method="GET" class="search-form">
+            <input type="text"
+                   name="query"
+                   placeholder="Try 'Switch'..."
+                   required>
+            <button type="submit"
+                    class="search-btn">Search</button>
+        <!-- User Status -->
+        <span>
+                Welcome, Budget Manager
+            </span>
+        <!-- Log out button -->
+        <button class="logout-btn">
+            Log Out
+        </button>
+    </div>
+</header>
+<!-- End the header---------------------------------------------------------------------------------------- -->
+
+<!-- Start Navigation Bar copied from main -->
+<nav class="main-nav">
+    <ul>
+        <!-- Nav to Home Dashboard -->
+        <li><a href="index.html">Dashboard</a></li>
+        <!-- Nav to List view -->
+        <li><a href="list.html">Budget Items</a></li>
+        <!-- Nav to calendar view -->
+        <li><a href="calendar.html">Calendar</a></li>
+        <!-- Nav to add item screen -->
+        <li><a href="add-item.html">Add Item</a></li>
+    </ul>
+</nav>
+<!-- End Navigation Bar ------------------------------------------------------------------- -->
+
+
+<!-- Unqiue Page Contents -->
+<main>
+    <!-- Current Page Header -->
+    <h1 class="page-title">Calendar - September 2026</h1>
+
+    <section class="calendar-container">
+
+        <!-- Day of the week hearders -->
+        <div class="calendar-header">Sunday</div>
+        <div class="calendar-header">Monday</div>
+        <div class="calendar-header">Tuesday</div>
+        <div class="calendar-header">Wednesday</div>
+        <div class="calendar-header">Thursday</div>
+        <div class="calendar-header">Friday</div>
+        <div class="calendar-header">Saturday</div>
+
+        <!-- Days -->
+        <div class="calendar-day"></div>
+        <div class="calendar-day"></div>
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+
+        <div class="calendar-day">6</div>
+        <div class="calendar-day">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+
+        <!-- Item Entry -->
+        <div class="calendar-day"><p>10</p><small>Network Upgrade Due</small></div>
+
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+
+        <!-- Item 2 entry -->
+        <div class="calendar-day"><p>15</p><small>License Renewal Due</small></div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+
+        <div class="calendar-day">20</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-day">22</div>
+        <div class="calendar-day">23</div>
+        <div class="calendar-day">24</div>
+        <div class="calendar-day">25</div>
+        <div class="calendar-day">26</div>
+
+        <div class="calendar-day">27</div>
+        <div class="calendar-day">28</div>
+        <div class="calendar-day">29</div>
+        <div class="calendar-day">30</div>
+
+        <div class="calendar-day empty-day"></div>
+        <div class="calendar-day empty-day"></div>
+        <div class="calendar-day empty-day"></div>
+    </section>
+
+</main>
+
+<!-- Start Footer -------------------------------------------------------------------------------- copied from main -->
+<footer class="site-footer">
+    <p>IT Budget System 1.0</p>
+    <p>&copy; 2026 IT Budget System</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Use</p>
+</footer>
+<!-- End Footer -------------------------------------------------------------------------------- -->
+
+</body>
+</html>

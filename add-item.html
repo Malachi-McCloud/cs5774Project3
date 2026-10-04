@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Budget System - Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Start header ------------------------------------------------------------------------------------------- copied from main -->
+<header class="site-header">
+    <div class="logo-area">
+        <h2>IT Budget System</h2>
+        <p>Budget Planning and Resource Management</p>
+    </div>
+
+    <div class="user-info">
+        <!-- Search Bar added -->
+        <form action="search-results.html" method="GET" class="search-form">
+            <input type="text"
+                   name="query"
+                   placeholder="Try 'Switch'..."
+                   required>
+            <button type="submit"
+                    class="search-btn">Search</button>
+        <!-- User Status -->
+        <span>
+                Welcome, Budget Manager
+            </span>
+        <!-- Log out button -->
+        <button class="logout-btn">
+            Log Out
+        </button>
+    </div>
+</header>
+<!-- End the header---------------------------------------------------------------------------------------- -->
+
+<!-- Start Navigation Bar copied from main -->
+<nav class="main-nav">
+    <ul>
+        <!-- Nav to Home Dashboard -->
+        <li><a href="index.html">Dashboard</a></li>
+        <!-- Nav to List view -->
+        <li><a href="list.html">Budget Items</a></li>
+        <!-- Nav to calendar view -->
+        <li><a href="calendar.html">Calendar</a></li>
+        <!-- Nav to add item screen -->
+        <li><a href="add-item.html">Add Item</a></li>
+    </ul>
+</nav>
+<!-- End Navigation Bar ------------------------------------------------------------------- -->
+
+<!-- Unqiue Page Contents -->
+<main>
+    <!-- Current Page Header -->
+    <h1 class="page-title">Create New Item</h1>
+
+    <!-- Start Form -->
+    <section class="detail-form-container">
+        <form class="detail-form">
+
+        <!-- Item Name Label -->
+        <label for="item-name">Item Name</label>
+
+        <!-- Item Name Input -->
+        <input
+            type="text"
+            id="item-name"
+            placeholder="Enter item name">
+
+        <!-- Label for category -->
+        <label for="category">Category</label>
+
+        <!-- input for category -->
+        <select id="category">
+            <option selected disabled>Select Category</option>
+            <option>Infrastructure</option>
+            <option>Hardware</option>
+            <option>Licensing</option>
+            <option>Operations</option>
+        </select>
+
+        <!-- Label for Allocated Amount -->
+        <label for="allocated-amount">Allocated Amount</label>
+
+        <!-- Input  for Allocated Amount -->
+        <input
+            type="number"
+            id="allocated-amount"
+            placeholder="0.00">
+
+        <!-- Label for due date -->
+        <label for="due-date">Due Date</label>
+
+        <!-- Input for due date -->
+        <input
+            type="date"
+            id="due-date">
+
+        <!-- Submit Button -->
+        <button
+            type="submit"
+            class="primary-btn">Create Item</button>
+
+        <!-- Cancel Link -->
+        <a
+            href="list.html"
+            class="cancel-link">Cancel</a>
+        </form>
+    </section>
+</main>
+
+
+<!-- Start Footer -------------------------------------------------------------------------------- copied from main -->
+<footer class="site-footer">
+    <p>IT Budget System 1.0</p>
+    <p>&copy; 2026 IT Budget System</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Use</p>
+</footer>
+<!-- End Footer -------------------------------------------------------------------------------- -->
+
+
+<!-- Load Jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Load Javascript file -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

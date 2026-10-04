@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Budget System - Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Start header ------------------------------------------------------------------------------------------- copied from main -->
+<header class="site-header">
+    <div class="logo-area">
+        <h2>IT Budget System</h2>
+        <p>Budget Planning and Resource Management</p>
+    </div>
+
+    <div class="user-info">
+        <!-- Search Bar added -->
+        <form action="search-results.html" method="GET" class="search-form">
+            <input type="text"
+                   name="query"
+                   placeholder="Try 'Switch'..."
+                   required>
+            <button type="submit"
+                    class="search-btn">Search</button>
+        <!-- User Status -->
+        <span>
+                Welcome, Budget Manager
+            </span>
+        <!-- Log out button -->
+        <button class="logout-btn">
+            Log Out
+        </button>
+    </div>
+</header>
+<!-- End the header---------------------------------------------------------------------------------------- -->
+
+<!-- Start Navigation Bar copied from main -->
+<nav class="main-nav">
+    <ul>
+        <!-- Nav to Home Dashboard -->
+        <li><a href="index.html">Dashboard</a></li>
+        <!-- Nav to List view -->
+        <li><a href="list.html">Budget Items</a></li>
+        <!-- Nav to calendar view -->
+        <li><a href="calendar.html">Calendar</a></li>
+        <!-- Nav to add item screen -->
+        <li><a href="add-item.html">Add Item</a></li>
+    </ul>
+</nav>
+<!-- End Navigation Bar ------------------------------------------------------------------- -->
+
+<!-- Unqiue Page Contents -->
+<main>
+    <!-- Current Page Header -->
+    <h1 class="page-title">Budget Items</h1>
+
+    <!-- Start grid view -->
+    <section class="table-section">
+
+        <table class="budget-table">
+
+            <!-- Headers -->
+            <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Allocated</th>
+                <th>Remainder</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <!-- New Header -->
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <!-- End Headers -->
+
+            <!-- Start Table Body/bvalues -->
+            <tbody>
+            <!-- Item 1 -->
+            <tr>
+                <!-- Item Source: Openclipart.org -->
+                <td><img
+                        src="images/networkclipart.svg"
+                        alt="Infrastructure Item Icon"
+                        class="item-icon">
+                        Switch Upgrade
+                </td>
+                <td>Infrastructure</td>
+                <td>$1,000</td>
+                <td>$0</td>
+                <td>09/10/2026</td>
+                <td>Complete</td>
+                <!-- Buttons Added -->
+                <td><button type="button" class="quick-action-btn">Check Status</button></td>
+            </tr>
+            <!-- End Item 1 -->
+
+            <!-- Item 2 -->
+            <tr>
+                <!-- Item Source: Openclipart.org -->
+                <td><img
+                    src="images/keyclipart.svg"
+                    alt="Licensing item icon"
+                    class="item-icon">
+                    License Renewal</td>
+                <td>Licensing</td>
+                <td>$500</td>
+                <td>-$500</td>
+                <td></td>
+                <td>Pending</td>
+                <!-- Buttons Added -->
+                <td><button type="button" class="quick-action-btn">Check Status</button></td>
+            </tr>
+            <!-- End Item 2 -->
+
+            <!-- Item 3 -->
+            <tr>
+                <!-- Item Source: Openclipart.org -->
+                <td><img
+                    src="images/networkclipart.svg"
+                    alt="Network clipart"
+                    class="item-icon">
+                    Server Rebuild</td>
+                <td>Network</td>
+                <td>$3,000</td>
+                <td>$1,250</td>
+                <td>10/01/2026</td>
+                <td>Active</td>
+                <!-- Buttons Added -->
+                <td><button type="button" class="quick-action-btn">Check Status</button></td>
+            </tr>
+            <!-- End Item 3 -->
+
+            <!-- Item 4 -->
+            <tr>
+                <td><img
+                        src="images/laptopclipart.svg"
+                        alt="Operations Icon"
+                        class="item-icon">
+                        Employee Onboarding</td>
+                <td>Operations</td>
+                <td>$750</td>
+                <td>$125</td>
+                <td>10/05/2026</td>
+                <td>Active</td>
+                <!-- Buttons Added -->
+                <td><button type="button" class="quick-action-btn">Check Status</button></td>
+            </tr>
+            <!-- End Item 4 -->
+
+            </tbody>
+
+
+        </table>
+    </section>
+</main>
+
+
+<!-- Start Footer -------------------------------------------------------------------------------- copied from main -->
+<footer class="site-footer">
+    <p>IT Budget System 1.0</p>
+    <p>&copy; 2026 IT Budget System</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Use</p>
+</footer>
+<!-- End Footer -------------------------------------------------------------------------------- -->
+
+<!-- Load Jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Load js file  -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

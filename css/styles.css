@@ -1,0 +1,482 @@
+/* Global Styles --------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #d7ead4;
+    color: #333333;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* End Global Styles ----------------------------------------------------------- */
+
+/* Header ---------------------------------------------------------------------- */
+.site-header {
+    background-color: #5f7385;
+    color: white;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 2rem;
+}
+
+.site-header h2 {
+    font-family: Georgia, serif;
+    margin-bottom: .25rem;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.logout-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+/* End header ------------------------------------------------------------------------------- */
+
+/* Navigation Bar ------------------------------------------------------------------------- */
+
+.main-nav {
+    background-color: #7fb393;
+
+}
+
+.main-nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+
+}
+
+.active nav {
+    background-color: #7fb393;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Navigation Bar end ---------------------------------------------------------------------- */
+
+/* Page Title Bar -------------------------------------------------------------------------- */
+
+.page-title {
+    background-color: #8fb393;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+    margin-bottom: 2rem;
+}
+
+/* Page Title bar End ----------------------------------------------------------------------- */
+
+/* Summary Cards ----------------------------------------------------------------------------- */
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    /* Add spacing */
+    margin-bottom: 2rem;
+
+}
+
+.summary-card {
+    background-color: white;
+
+    padding: 1.5rem;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+
+/* End Summary Card ------------------------------------------------------------------------------- */
+
+/* Dashboard Panels ----------------------------------------------------------------------------------- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.panel {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+.panel h2 {
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+}
+
+.panel ul{
+    padding-left: 1.25rem;
+}
+
+.panel li {
+    margin-bottom: 0.5rem;
+}
+
+.panel image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* End Dashboard Panels ---------------------------------------------------------------------------- */
+
+/* Action Button -----------------------------------------------------------------------------------*/
+
+.action-section {
+    text-align: center;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #5f7385;
+    color:white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* End action button --------------------------------------------------------------------------*/
+
+/* Footer ------------------------------------------------------------------------------------- */
+.site-footer {
+    background-color: #5f7385;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+/* End footer ----------------------------------------------------------------------------- */
+
+/* Responsive Design Style Components ------------------------------------------------------------*/
+@media (max-width:768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/* End Responsive Design ---------------------------------------------------------------------------------*/
+
+/* List View Styles --------------------------------------------- */
+.table-section{
+    background: white;
+    border-radius: 8px;
+    overflow:hidden;
+
+}
+
+.budget-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.budget-table th {
+    background-color: #7fb393;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+
+}
+
+.budget-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #d7ead4;
+}
+
+/* Alternating Color for cells */
+.budget-table tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+
+/* End List View Styles --------------------------------------------------- */
+
+/* Detail View Styles ------------------------------------------------------ */
+
+.detail-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-form{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+}
+
+.detail-form label {
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+
+.detail-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+
+}
+
+.detail-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.detail-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+
+}
+
+.detail-form .primary-btn {
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-link {
+    text-align:center;
+    color: #5f7385;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
+/* End Item Details Styling ------------------------------------------- */
+
+/* Calendar Page Styles ----------------------------------------------  */
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.calendar-header {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    border: 1px solid #d7ead4;
+
+}
+
+.calendar-day {
+    min-height: 120px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #d7ead4;
+    background-color: #f2f2f2;
+}
+
+.calendar-day p {
+    font-weight: bold;
+}
+
+.calendar-day small {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.empty-day {
+    background-color: white;
+}
+
+/* Logged out Main Screen ----------------------------------------------------- */
+.guest-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #5f7385;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Images for the list ----------------------------------------------------------------------------- */
+.item-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+/* Action button --------------------------------------------------------------------------------- */
+quick-action-btn {
+    background-color: #7fb393;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+
+}
+
+.quick-action-btn:hover {
+    background-color: #6a9c7d;
+}
+
+.quick-action-btn:active {
+    transform: scale(0.98);
+
+}
+
+.status-popover {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    background-color: #e0efe3;
+    color: #2b4c38;
+    border-left: 3px solid #7fb393;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+/* Category Notice (dynamic) ------------------------------------------------------------------------- */
+.category-notice {
+    background-color: #f0f7f2;
+    color: #2b4c38;
+    padding: 10px 14px;
+    border-left: 4px solid #7fb393;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.detail-form input#item-name.active-highlight {
+    border: 2px solid #7fb393;
+    outline: none;
+    background-color: #fcfdfe;
+}
+
+/* Cool little entrance add on */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
